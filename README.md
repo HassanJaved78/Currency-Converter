@@ -1,12 +1,22 @@
-# React + Vite
+# 💱 React Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern **currency converter** built using **React.js** and powered by the [MoneyMorph API](https://moneymorph.dev/). This project allows users to convert between world currencies in real time with live exchange rates.
 
-Currently, two official plugins are available:
+## 📌 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔁 Real-time currency conversion
+- 🌐 Fetches a wide list of global currencies
+- 🔄 Swap between input and output currencies
+- 📉 Displays current exchange rate
+- 🔒 Input validation (prevents same-currency conversion or invalid input)
+- ⚠️ Graceful error handling
+- 💡 Responsive design
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Tech Stack
+
+**React.js** => Front-end framework
+**CSS** => Styling (custom or module)
+**MoneyMorph API** => Currency and exchange rate data
+**corsproxy.io** => Simple CORS bypass for free APIs
