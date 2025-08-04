@@ -25,8 +25,8 @@ const Converter = () => {
     }
 
     useEffect(() => {
-    setConvertedAmount(null);
-    setExchangeRate('Exchange Rate');
+        setConvertedAmount(null);
+        setExchangeRate('Exchange Rate');
     }, [amount, fromCurrency, toCurrency]);
 
     useEffect(() => {

@@ -1,4 +1,4 @@
-.converter-container {
+.exchange-rates{
     background: rgba(255, 255, 255, 0.8);
     /* light panel */
     padding: 1rem;
@@ -11,8 +11,8 @@
     border-radius: 1rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(6px);
-    /* background: rgba(255, 255, 255, 0.85); */
 }
+
 
 hr {
     background: linear-gradient(135deg,
@@ -64,7 +64,12 @@ select:focus {
     outline: none;
 }
 
-input[type="submit"] {
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="submit"], input[type="button"] {
     max-width: 250px;
     margin: 25px auto;
     background-color: #2661F9;
@@ -78,7 +83,7 @@ input[type="submit"] {
     display: block;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, input[type="button"]:hover {
     background-color: #1e4fd3;
 }
 
@@ -87,23 +92,9 @@ input[type="submit"]:disabled {
     background-color: #40444f;
 }
 
-input:first-of-type {
-    font-weight: bold;
-}
 
 label {
     font-weight: 650;
-}
-
-.converter-form {
-    margin: 20px auto;
-    width: 80%;
-}
-
-.converter-form h2:last-of-type {
-    font-size: 2rem;
-    color: #111;
-    margin-top: 10px;
 }
 
 button{
@@ -116,4 +107,41 @@ button{
 
 button:hover{
     cursor: pointer;
+}
+
+.table-container{
+    width: 95%;
+    margin: 0px auto;
+    height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    display: block;
+}
+
+th{
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+table{
+    width: 99.5%;
+    position: relative;
+}
+
+table,th, td{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td{
+    text-align: center;
+    padding: 3px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }

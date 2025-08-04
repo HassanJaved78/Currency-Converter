@@ -28,6 +28,29 @@ export const convert = async (amount, fromCurrency, toCurrency) => {
     }
 }
 
+export const getExchangeRates = async (fromCurrency, toCurrency) => {
+    try {
+        const response = await fetch(`https://corsproxy.io/https://moneymorph.dev/api/latest?base=${fromCurrency}`);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+
+        const ratesObject = data.rates;
+        const ratesList = Object.entries(ratesObject);
+        console.log(ratesList);
+
+        if(toCurrency === "All") {
+            return ratesList;
+        }
+        else{
+            const rate = ratesList.filter(([code]) => code === toCurrency);
+            return rate;
+        }
+    } catch (error) {
+        alert(`Error fetching data: ${error}\n Please try again later`);
+        return null;
+    }
+}
 
 // https://moneymorph.dev/api/convert/50/USD/EUR
 // {
@@ -80,6 +103,8 @@ export const convert = async (amount, fromCurrency, toCurrency) => {
 // }
 
 // https://moneymorph.dev/api/latest
+// optional parameter -> base
+// https://moneymorph.dev/api/latest?base={currency code]}
 // {
 //   "timestamp": 1754307754,
 //   "base": "USD",
