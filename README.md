@@ -1,22 +1,30 @@
 # 💱 React Currency Converter
 
-A responsive and modern **currency converter** built using **React.js** and powered by the [MoneyMorph API](https://moneymorph.dev/). This project allows users to convert between world currencies in real time with live exchange rates.
+A modern, responsive currency converter built using React.js, powered by the MoneyMorph API. This app enables users to convert between global currencies in real time, offering live exchange rates with intuitive UI features.
+
 
 ## 📌 Features
+🔁 Live Currency Conversion – Real-time exchange rate updates.
 
-- 🔁 Real-time currency conversion
-- 🌐 Fetches a wide list of global currencies
-- 🔄 Swap between input and output currencies
-- 📉 Displays current exchange rate
-- 🔒 Input validation (prevents same-currency conversion or invalid input)
-- ⚠️ Graceful error handling
-- 💡 Responsive design
+🌍 Global Currency Support – Fetches and displays a comprehensive list of world currencies.
+
+🔄 Swap Functionality – Easily switch between input and output currencies.
+
+📊 Detailed Rate Display – Shows currency codes, names, and their current exchange rates.
+
+✅ Input Validation – Prevents invalid selections (e.g., same "from" and "to" currency).
+
+⚠️ Graceful Error Handling – Handles API issues and invalid selections with user feedback.
+
+📱 Responsive Design – Fully optimized for both desktop and mobile devices.
+
+🧹 Reset Option – Quickly reset selections and results.
 
 ## 🚀 Live Demo
 
-## 📦 Tech Stack
-
-**React.js** => Front-end framework
-**CSS** => Styling (custom or module)
-**MoneyMorph API** => Currency and exchange rate data
-**corsproxy.io** => Simple CORS bypass for free APIs
+## 🛠️ Tech Stack
+Technology	Purpose
+React.js	Frontend framework (UI + state)
+CSS	Custom styling and responsiveness
+MoneyMorph API	Fetches real-time exchange rate data
+corsproxy.io	Enables CORS support for API access
