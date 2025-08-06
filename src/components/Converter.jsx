@@ -88,7 +88,7 @@ const Converter = () => {
     }
 
     return (
-        <div className="converter-container">
+        <div id="converter" className="converter-container">
             <h2>Currency Converter</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam saepe, ut voluptates repellat dicta itaque.</p>
             <hr />

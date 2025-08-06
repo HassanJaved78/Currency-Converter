@@ -68,7 +68,7 @@ const ExchangeRates = () => {
     }
 
     return (
-        <div className="exchange-rates">
+        <div id="exchange" className="exchange-rates">
             <h2>Exchange Rate</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam saepe, ut voluptates repellat dicta itaque.</p>
             <hr />
