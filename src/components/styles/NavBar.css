@@ -1,0 +1,53 @@
+nav {
+    background-color: rgb(52, 47, 47);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+li {
+    position: relative;
+    /* margin: 0 1rem; */
+    padding: 0.2rem 0;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: aliceblue;
+    transform: scaleX(0);
+    /* hide by default */
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    /* animate underline on hover */
+}
+
+li>a {
+    color: white;
+    text-decoration: none;
+}
