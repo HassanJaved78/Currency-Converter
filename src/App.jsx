@@ -5,6 +5,7 @@ import Converter from './components/Converter'
 import ExchangeRates from './components/ExchageRates'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import Footer from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,8 @@ function App() {
       <div className="container">
         <ExchangeRates />
       </div>
+
+      <Footer />
     </>
   )
 }
